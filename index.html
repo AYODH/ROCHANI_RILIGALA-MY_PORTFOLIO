@@ -44,21 +44,54 @@
                         efficient, user-friendly applications and thriving in high-standard, improvement-focused
                         environments</p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link">Skills</p>
-                            <p class="tab-links">Experience</p>
-                            <p class="tab-links">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
                         </div>
-                        <div class="tab-contents">
+                        <div class="tab-contents active-tab" id="skills">
                             <ul>
                                 <li><span>Front-End Development</span><br>HTML,CSS,JavaScript,React.js</li>
                                 <li><span>Back-End Development</span><br>Java,Spring Boot,Python,PHP,Node.js,MySQL</li>
                                 <li><span>UI/UX</span><br>Figma, Canva</li>
                             </ul>
                         </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024-2025</span><br> Industry Outreach Team Lead of the IEEE WIE Student Branch of IIT</li>
+                                <li><span>2023-Present</span><br> Member of the Leo Club of IIT</li>
+                                <li><span>2023-2024</span><br> Secretary of the School Quizzers’ Association Sri Lanka</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023-2027</span><br>BEng (Hons) Software Engineering undergraduate</li>
+                                <li><span>2020-2023</span><br>G.C.E. Advanced Level</li>
+                                <li><span>2019</span><br>G.C.E. Ordinary Level</li>
+                            </ul>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
 
 </html>
