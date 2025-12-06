@@ -246,10 +246,18 @@ nav ul li a:hover::after {
   justify-content: space-between;
   cursor: pointer;
   text-align: left;
+  transition: background-color 0.25s ease;
+  border-radius: 12px;
 }
 
+/* Hover state – turn purple */
 .cert-group-header:hover {
-  background: #262626;
+  background-color: #702670;
+}
+
+/* When OPEN – keep it purple */
+.cert-group.open .cert-group-header {
+  background-color: #702670;
 }
 
 .cert-provider {
@@ -281,6 +289,13 @@ nav ul li a:hover::after {
   justify-content: space-between;
   padding: 0.7rem 1.1rem;
   border-bottom: 1px solid #242424;
+  text-decoration: none;
+  color: #fff;  
+  transition: background 0.2s;
+}
+
+.cert-item:hover {
+  background: #2d2d2d;
 }
 
 .cert-item:last-child {
