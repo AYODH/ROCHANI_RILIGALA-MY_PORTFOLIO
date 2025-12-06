@@ -202,9 +202,133 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
+/*-------------------Certificates Section-------------------*/
+/* Section spacing */
+#certifications {
+  padding: 30px 0;
+}
+
+/* Title + total badge */
+.cert-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cert-total-badge {
+  background: #702670;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+/* Each provider group */
+.cert-group {
+  background: #151515;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+/* Header row (clickable) */
+.cert-group-header {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  padding: 0.9rem 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-align: left;
+}
+
+.cert-group-header:hover {
+  background: #262626;
+}
+
+.cert-provider {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.cert-count {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* Small arrow on the right */
+.cert-toggle {
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+/* List of certs */
+.cert-list {
+  background: #101010;
+  border-top: 1px solid #2b2b2b;
+}
+
+/* Individual cert rows */
+.cert-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 1.1rem;
+  border-bottom: 1px solid #242424;
+}
+
+.cert-item:last-child {
+  border-bottom: none;
+}
+
+.cert-title {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.cert-date {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* ====== Collapse / expand behaviour ====== */
+.cert-group .cert-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.cert-group.open .cert-list {
+  max-height: 400px; /* large enough for your list */
+}
+
+.cert-group.open .cert-toggle {
+  transform: rotate(180deg);
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .cert-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+  }
+
+  .cert-date {
+    font-size: 0.8rem;
+  }
+}
+
 /*-------------------Articles Section-------------------*/
 #articles {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 #articles .container {

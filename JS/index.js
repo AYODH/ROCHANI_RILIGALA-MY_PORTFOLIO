@@ -43,3 +43,11 @@ let swiperFeatured = new Swiper('.featured__swiper', {
         }
     }
 })
+
+/*=============== CERTIFICATES COLLAPSE ===============*/
+document.querySelectorAll('.cert-group-header').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const group = btn.closest('.cert-group');
+    group.classList.toggle('open');
+  });
+});
