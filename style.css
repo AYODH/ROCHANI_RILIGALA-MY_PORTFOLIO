@@ -202,6 +202,140 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
+/*-------------------Articles Section-------------------*/
+#articles {
+    padding: 50px 0;
+}
+
+#articles .container {
+  max-width: 1250px;         /* or whatever you use elsewhere */
+  margin: 0 auto;
+  padding: 1rem 1.5rem;         /* same side padding as other sections */
+}
+
+/* Swiper wrapper */
+.featured__swiper {
+  position: relative;
+  padding: 1rem 2.8rem;    /* space at sides for arrows */
+}
+
+.featured__card{
+  background: #111;
+  border-radius:20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 360px;             /* card width */
+  max-width: 400px;          /* responsive on small screens */
+  display: flex;
+  flex-direction: column;
+}
+
+.featured__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+/* Image at top of card */
+.featured__card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.article-content {
+  padding: 1.4rem 1.6rem 1.6rem;
+}
+
+.article-category {
+    font-size: 0.8rem;
+  color: #e3b2ff;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(227, 178, 255, 0.12);
+  display: inline-block;
+  margin-bottom: 0.6rem;
+}
+
+.article-title {
+  margin: 0.4rem 0 0.5rem;
+  font-size: 1.4rem;
+  line-height: 1.25;
+}
+
+.article-excerpt {
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+.article-meta {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.75;
+}
+
+/* Swiper class */
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: '';
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+  width: 44px;
+  height: 44px;
+  background-color: rgb(46, 2, 45);
+  border: 2px solid #702670;
+  border-radius: 999px;
+  font-size: 1.8rem;
+  color: #f4e1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border 0.3s, background-color 0.3s, transform 0.2s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 0.5rem;
+}
+
+.swiper-button-next {
+  right: 0.5rem;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #702670;
+  border-color: #f4e1ff;
+  transform: translateY(-50%) scale(1.05);
+}
+
+/* On very small screens, pull arrows closer */
+@media (max-width: 600px) {
+  .featured__swiper {
+    padding: 1rem 1.8rem;
+  }
+
+  .swiper-button-prev {
+    left: 0.2rem;
+  }
+
+  .swiper-button-next {
+    right: 0.2rem;
+  }
+
+  .featured__card {
+    width: 90vw;
+  }
+}
+
 /*-------------------Portfolio Section-------------------*/
 #portfolio {
     padding: 50px 0;
@@ -278,33 +412,28 @@ nav ul li a:hover::after {
     padding: 50px 0;
 }
 
-/* Center the swiper in the gallery */
 .home__images {
     display: flex;
     justify-content: center;
 }
 
-/* Swiper wrapper */
 .home__swiper {
     width: 100%;
-    max-width: 100%;   /* make it wide – increase if you want */
+    max-width: 100%;   
     margin: 0 auto;
 }
 
-/* Make slides centered and nice */
 .swiper-wrapper {
     align-items: center;
 }
 
-/* Each slide */
 .home__article {
     width: 100%; 
-    height: auto; /* total width of each image card including margin */
-    max-width: 480px;  /* width of each image card */
+    height: auto; 
+    max-width: 450px;  
     transition: transform .4s;
 }
 
-/* Image styles */
 .home__img {
     width: 100%;
     height: auto;
@@ -313,12 +442,10 @@ nav ul li a:hover::after {
     object-fit: cover;
 }
 
-/* Default smaller scale */
 .home__article {
     transform: scale(.8);
 }
 
-/* Active slide bigger */
 .swiper-slide-active,
 .swiper-slide-duplicate-active {
     transform: scale(1);

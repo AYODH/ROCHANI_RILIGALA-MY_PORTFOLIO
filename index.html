@@ -25,16 +25,16 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#articles">Articles</a></li>
                     <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#gallery">Memories</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Integration Consultant - Intern</p>
-                <p>(Softwear Engineering Undergraduate)</p>
                 <h1>Hi, I'm <span>Rochani Riligala </span><br> From Sri Lanka</h1>
+                <p>Integration Consultant - Intern</p>
+                <p style="font-style: italic; font-size: 20px;">(Softwear Engineering Undergraduate)</p>
             </div>
         </div>
     </div>
@@ -54,19 +54,19 @@
                         foundation in coding and system design, I’m passionate about delivering high-quality solutions
                         and contributing to efficient, user-focused digital systems.</p>
                     <div class="tab-titles">
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('Volunteering')">Volunteering</p>
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
                     </div>
 
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents active-tab" id="experience">
                         <ul>
                             <li><span>2025-Current</span><br> Integration Consultant Intern at Yenlo</li>
                         </ul>
                     </div>
 
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents" id="skills">
                         <ul>
                             <li><span>Integration Development</span><br>BOOMI, WSO2, API Management(BOOMI & WSO2)</li>
                             <li><span>Front-End Development</span><br>HTML,CSS,JavaScript,React.js</li>
@@ -127,6 +127,55 @@
         </div>
     </div>
 
+    <!---------------------Articles-------------------->
+    <div id="articles">
+        <div class="container">
+            <h1 class="sub-title">Latest Articles</h1>
+            <div class="featured__container container">
+                <div class="featured__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="featured__card swiper-slide">
+                            <img src="images/article1.jpg" alt="">
+                            <div class="article-content">
+                                <span class="article-category">Web Development</span>
+                                <h3 class="article-title">Building Scalable Web Applications with React</h3>
+                                <p class="article-excerpt">Learn the best practices for creating performant and
+                                    maintainable React
+                                    applications that scale with your business needs.</p>
+                                <div class="article-meta">
+                                    <span class="author">Rochani Riligala</span>
+                                    <span class="date">Nov 15, 2024</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide">
+                            <img src="images/article1.jpg" alt="">
+                            <div class="article-content">
+                                <span class="article-category">Integration Development</span>
+                                <h3 class="article-title">Building Scalable Web Applications with React</h3>
+                                <p class="article-excerpt">Learn the best practices for creating performant and
+                                    maintainable React
+                                    applications that scale with your business needs.</p>
+                                <div class="article-meta">
+                                    <span class="author">Rochani Riligala</span>
+                                    <span class="date">Nov 15, 2024</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!---------------------Portfolio-------------------->
     <div id="portfolio">
         <div class="container">
@@ -136,10 +185,13 @@
                     <img src="images/block_ballot_resized.png">
                     <div class="layer">
                         <h3>Election Voting System (Group)</h3>
-                        <p>Developing a secure, blockchain-based voting system to replace Sri Lanka’s paper-based
+                        <p>Developing a secure, blockchain-based voting system to replace Sri Lanka’s
+                            paper-based
                             election
                             process, featuring QR code authentication and automated result tallying.</p>
-                        <p>(Contribution – Front-End Development) – USING Blockchain, React, Java, Spring Boot, SQL</p>
+                        <p>(Contribution – Front-End Development) – USING Blockchain, React, Java, Spring
+                            Boot,
+                            SQL</p>
                         <a href="https://github.com/BlockBallort/BlockBallort"><i
                                 class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -148,10 +200,12 @@
                     <img src="images/agricare_resized.png">
                     <div class="layer">
                         <h3>Ceylon Agricare (Group)</h3>
-                        <p>A web app providing real-time services for sustainable agriculture, including a marketplace,
+                        <p>A web app providing real-time services for sustainable agriculture, including a
+                            marketplace,
                             weather
                             updates, and loan scheme information for farmers.</p>
-                        <p>(Contribution – Front-End Development) – USING Ballerina, JavaScript, HTML, CSS</p>
+                        <p>(Contribution – Front-End Development) – USING Ballerina, JavaScript, HTML, CSS
+                        </p>
                         <a href="https://linukaar.github.io/iwb046-balletcoders/"><i
                                 class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -160,7 +214,8 @@
                     <img src="images/ticketing_resized.png">
                     <div class="layer">
                         <h3>Real-Time Event Ticketing System (Individual)</h3>
-                        <p>Creating a real-time ticketing system with advanced concurrency handling to simulate
+                        <p>Creating a real-time ticketing system with advanced concurrency handling to
+                            simulate
                             concurrent
                             sales and releases, ensuring data integrity across multiple threads.</p>
                         <p>(Contribution – Full-Stack Development) – USING Java, React, Spring Boot, SQL</p>
@@ -172,10 +227,13 @@
                     <img src="images/hotel_resized.png">
                     <div class="layer">
                         <h3>Hotel Booking Website (Individual)</h3>
-                        <p> Created a responsive hotel booking web application with separate interfaces for customers
+                        <p> Created a responsive hotel booking web application with separate interfaces for
+                            customers
                             and
                             hotel staff.</p>
-                        <p>(Contribution – Front-End and Back-End Development) – USING HTML, CSS, JavaScript, PHP, MySQL
+                        <p>(Contribution – Front-End and Back-End Development) – USING HTML, CSS,
+                            JavaScript,
+                            PHP, MySQL
                         </p>
                         <a href="https://github.com/AYODH/Elysian-Escape---Hotel-Booking-Website"><i
                                 class="fas fa-external-link-alt"></i></a>
@@ -185,9 +243,12 @@
                     <img src="images/bookweb_resized.png">
                     <div class="layer">
                         <h3>Responsive Book Website (Individual)</h3>
-                        <p>Developed a responsive website for browsing and discovering books, with a focus on
+                        <p>Developed a responsive website for browsing and discovering books, with a focus
+                            on
                             user-friendly
-                            navigation and optimised display across various devices. Hosted on Netlify for easy access
+                            navigation and optimised display across various devices. Hosted on Netlify for
+                            easy
+                            access
                             and
                             performance.</p>
                         <p>(Contribution – Front-End Development) – USING HTML, CSS, JavaScript</p>
@@ -199,9 +260,13 @@
                     <img src="images/student_management_resized.png">
                     <div class="layer">
                         <h3>Student Management System in Python (Individual)</h3>
-                        <p>This project is designed to predict student progression outcomes at the end of each academic
+                        <p>This project is designed to predict student progression outcomes at the end of
+                            each
+                            academic
                             year based on the number of credits.
-                            The program validates user inputs, calculates progression outcomes, and provides a graphical
+                            The program validates user inputs, calculates progression outcomes, and provides
+                            a
+                            graphical
                             representation using a histogram.</p>
                         <a href="https://github.com/AYODH/StudentManagementSystem-in-python"><i
                                 class="fas fa-external-link-alt"></i></a>
@@ -211,7 +276,8 @@
                     <img src="images/airline_reservation_resized.png">
                     <div class="layer">
                         <h3>Plane seat booking Management System in Java (Individual)</h3>
-                        <p>The Plane Management Application is a Java-based system for managing plane seating,
+                        <p>The Plane Management Application is a Java-based system for managing plane
+                            seating,
                             ticketing, and customer information.</p>
                         <a href="https://github.com/AYODH/PlaneManagementSystem-in-Java"><i
                                 class="fas fa-external-link-alt"></i></a>
@@ -221,8 +287,11 @@
                     <img src="images/flappybird_resized.png">
                     <div class="layer">
                         <h3>Flappy Bird Game</h3>
-                        <p>This project is a simple implementation of the classic Flappy Bird game using Java. The
-                            player controls a bird, attempting to fly between sets of pipes without hitting them. The
+                        <p>This project is a simple implementation of the classic Flappy Bird game using
+                            Java.
+                            The
+                            player controls a bird, attempting to fly between sets of pipes without hitting
+                            them. The
                             goal is to pass through as many pipes as possible without crashing.</p>
                         <a href="https://github.com/AYODH/Flappy-Bird-Game"><i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -312,7 +381,8 @@
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-envelope"></i> <a
                             href="mailto:rochaniriligala@gmail.com">rochaniriligala@gmail.com</a></p>
-                    <p> <i class="fa-solid fa-phone"></i><a href="tel:+94 71 059 2660">+94 71 059 2660</a></p>
+                    <p> <i class="fa-solid fa-phone"></i><a href="tel:+94 71 059 2660">+94 71 059 2660</a>
+                    </p>
                     <div class="social-icons">
                         <a href="https://www.instagram.com/_rochi?igsh=ZzdmbjV1Mnllamlz&utm_source=qr"><i
                                 class="fab fa-instagram"></i></a>
