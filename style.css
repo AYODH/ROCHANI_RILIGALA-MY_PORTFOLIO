@@ -905,6 +905,10 @@ nav .fas {
         padding: 1rem 1rem;
     }
 
+    #articles  .sub-title {
+        padding: 0 1rem;
+    }
+
     .featured__card {
         width: 100%;
         max-width: none;
