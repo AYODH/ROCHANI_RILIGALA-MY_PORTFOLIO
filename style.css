@@ -809,8 +809,6 @@ nav .fas {
     /* Header / hero */
     #header {
         background-image: url(images/Frame\ 4\ \(1\).png);
-        background-size: cover;
-        background-position: center;
     }
 
     .container {
@@ -818,7 +816,7 @@ nav .fas {
     }
 
     .header-text {
-        margin-top: 40%;
+        margin-top: 120%;
         font-size: 20px;
     }
 
