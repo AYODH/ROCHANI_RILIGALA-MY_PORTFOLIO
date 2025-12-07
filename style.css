@@ -74,10 +74,43 @@ nav ul li a:hover::after {
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
+    line-height: 1.1;
 }
 
 .header-text h1 span {
     color: #702670;
+}
+
+/* Role lines */
+.header-text .role {
+    margin-top: 0.6rem;
+    font-size: 24px;
+}
+
+.header-text .sub-role {
+    margin-top: 0.2rem;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* ---------- Responsive for mobile ---------- */
+@media (max-width: 768px) {
+    .header-text {
+        margin-top: 30%;
+        font-size: 22px;
+    }
+
+    .header-text h1 {
+        font-size: 34px;
+    }
+
+    .header-text .role {
+        font-size: 18px;
+    }
+
+    .header-text .sub-role {
+        font-size: 16px;
+    }
 }
 
 /*-------------------About Section-------------------*/
