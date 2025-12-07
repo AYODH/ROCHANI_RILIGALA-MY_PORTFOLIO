@@ -305,6 +305,8 @@ nav ul li a:hover::after {
 .cert-title {
   margin: 0;
   font-size: 0.95rem;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .cert-date {
