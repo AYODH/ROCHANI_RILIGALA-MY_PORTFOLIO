@@ -534,8 +534,8 @@ nav ul li a:hover::after {
     height: 5px;
     width: 100%;
     background: linear-gradient(90deg, #ff4b8b, #702670, #24d3ee);
-    opacity: 0.9;
-    z-index: 2;
+    opacity: 1;
+    z-index: 3;
 }
 
 /* Project image used as dimmed background */
@@ -545,7 +545,7 @@ nav ul li a:hover::after {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.3);
+    filter: brightness(0.65) contrast(1.05);
     transform: scale(1.05);
     transition: transform 0.4s ease, filter 0.4s ease;
 }
@@ -558,8 +558,8 @@ nav ul li a:hover::after {
     height: 100%;
     background: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.82) 0%,
-        rgba(0, 0, 0, 0.96) 60%
+        rgba(112, 38, 112, 0.40) 0%,
+        rgba(0, 0, 0, 0.88) 90%
     );
     border-radius: 18px;
     padding: 1.6rem 1.7rem 1.4rem;
@@ -595,11 +595,11 @@ nav ul li a:hover::after {
 
 /* View project button */
 .layer a {
-    margin-top: 1.1rem;
+    margin-top: 1rem;
     color: #111;
     text-decoration: none;
-    font-size: 0.9rem;
-    line-height: 40px;
+    font-size: 0.75rem;
+    line-height: 35px;
     background: #fdfdfd;
     padding: 0 1.4rem;
     border-radius: 999px;
@@ -628,7 +628,7 @@ nav ul li a:hover::after {
     font-weight: 600;
     padding: 0.1rem 0.7rem;
     border-radius: 999px;
-    background: rgba(112, 38, 112, 0.2);
+    background: rgba(26, 1, 41, 0.12);
     color: #f4d3ff;
     margin-bottom: 0.4rem;
 }
