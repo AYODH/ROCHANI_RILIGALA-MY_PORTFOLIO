@@ -415,6 +415,16 @@ nav ul li a:hover::after {
     line-height: 1.25;
 }
 
+.article-title a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.article-title a:hover {
+    text-decoration: underline;
+    color: #e3b2ff;
+}
+
 .article-excerpt {
     opacity: 0.9;
     font-size: 0.95rem;
